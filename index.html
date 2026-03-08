@@ -16,23 +16,15 @@
           },
           colors: {
             nomad: {
-              50: '#f0f7f4',
-              100: '#d9ede5',
-              200: '#b3dbcb',
-              300: '#7ec2a9',
-              400: '#4da688',
-              500: '#2d8c6e',
-              600: '#1f7059',
-              700: '#195a47',
-              800: '#16493a',
-              900: '#133d30',
+              50: '#f0f7f4', 100: '#d9ede5', 200: '#b3dbcb', 300: '#7ec2a9',
+              400: '#4da688', 500: '#2d8c6e', 600: '#1f7059', 700: '#195a47',
+              800: '#16493a', 900: '#133d30',
             }
           }
         }
       }
     }
   </script>
-  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
   <style>
     body { font-family: 'Inter', sans-serif; }
     .font-serif { font-family: 'Playfair Display', serif; }
@@ -46,8 +38,6 @@
   </style>
 </head>
 <body class="bg-white text-gray-900 antialiased">
-
-  <!-- HEADER -->
   <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16">
       <a href="index.html" class="flex items-center gap-2">
@@ -59,455 +49,105 @@
       <nav class="hidden md:flex items-center gap-8">
         <a href="garanties.html" class="text-sm text-gray-600 hover:text-gray-900 font-medium transition-colors">Nos garanties</a>
         <a href="pourquoi.html" class="text-sm text-gray-600 hover:text-gray-900 font-medium transition-colors">Pourquoi Nomad</a>
-        <a href="#" class="text-sm text-gray-600 hover:text-gray-900 font-medium transition-colors">Le blog</a>
       </nav>
-      <div class="flex items-center gap-3">
-        <a href="tel:+33900000000" class="hidden md:flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-900 transition-colors">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.2 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          Nous appeler
-        </a>
-        <a href="#devis" class="bg-nomad-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-nomad-700 transition-colors">Obtenir mon devis</a>
-      </div>
+      <a href="#devis" class="bg-nomad-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-nomad-700 transition-colors">Obtenir mon devis</a>
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="relative h-screen min-h-[680px] flex items-center overflow-hidden pt-16">
     <div class="absolute inset-0">
-      <img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1800&auto=format&fit=crop&q=80" alt="Voyage" class="w-full h-full object-cover" />
+      <img src="images/hero-voyage.png" alt="Voyage" class="w-full h-full object-cover" />
       <div class="hero-overlay absolute inset-0"></div>
     </div>
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
       <div class="max-w-2xl">
         <p class="text-nomad-300 text-sm font-medium uppercase tracking-widest mb-6">Assurance voyage nouvelle génération</p>
-        <h1 class="font-serif text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6">
-          Profitez du voyage.<br />
-          <em>On gère les imprévus.</em>
-        </h1>
-        <p class="text-white/80 text-lg lg:text-xl leading-relaxed mb-8 max-w-xl">
-          Une assurance modulaire qui s'adapte à votre voyage. Choisissez votre socle et personnalisez avec vos options.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 mb-10">
-          <a href="#devis" id="devis" class="inline-flex items-center justify-center gap-2 bg-nomad-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-nomad-700 transition-colors text-base">
-            Obtenir mon devis
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-        <!-- Micro-reassurance badges -->
-        <div class="flex flex-wrap gap-3">
-          <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white/90 text-sm px-4 py-2 rounded-full border border-white/20">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Devis en 30 sec
-          </span>
-          <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white/90 text-sm px-4 py-2 rounded-full border border-white/20">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            Attestation immédiate
-          </span>
-          <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white/90 text-sm px-4 py-2 rounded-full border border-white/20">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-            Assistance mondiale 24/7
-          </span>
-        </div>
+        <h1 class="font-serif text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">Profitez du voyage.<br /><em>On gère les imprévus.</em></h1>
+        <p class="text-white/80 text-lg leading-relaxed mb-8 max-w-xl">Une assurance modulaire qui s'adapte à votre voyage.</p>
+        <a href="#devis" id="devis" class="inline-flex items-center gap-2 bg-nomad-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-nomad-700 transition-colors">Obtenir mon devis</a>
       </div>
     </div>
   </section>
 
-  <!-- POUR QUEL VOYAGE -->
   <section class="py-24 bg-gray-50">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="text-center mb-16">
-        <p class="text-nomad-600 text-sm font-semibold uppercase tracking-widest mb-3">Votre situation</p>
         <h2 class="text-4xl font-serif font-bold text-gray-900 mb-4">Pour quel voyage ?</h2>
         <p class="text-gray-500 text-lg max-w-xl mx-auto">Que vous partiez une semaine ou deux ans, Nomad s'adapte à votre profil.</p>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
-        <!-- Card 1 -->
-        <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100 cursor-pointer">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100">
           <div class="relative h-44 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&auto=format&fit=crop&q=70" alt="Vacances" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <img src="images/vacances.png" alt="Vacances" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
           </div>
-          <div class="p-4">
-            <h3 class="font-semibold text-gray-900 text-sm">Vacances</h3>
-            <p class="text-gray-500 text-xs mt-1">Séjour court · Europe & monde</p>
-          </div>
+          <div class="p-4"><h3 class="font-semibold text-gray-900 text-sm">Vacances</h3><p class="text-gray-500 text-xs mt-1">Séjour court · Europe & monde</p></div>
         </div>
-        <!-- Card 2 -->
-        <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100 cursor-pointer">
+        <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100">
           <div class="relative h-44 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&auto=format&fit=crop&q=70" alt="Études" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <img src="images/etudes.png" alt="Études" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
           </div>
-          <div class="p-4">
-            <h3 class="font-semibold text-gray-900 text-sm">Études à l'étranger</h3>
-            <p class="text-gray-500 text-xs mt-1">Erasmus · Campus monde</p>
-          </div>
+          <div class="p-4"><h3 class="font-semibold text-gray-900 text-sm">Études à l'étranger</h3><p class="text-gray-500 text-xs mt-1">Erasmus · Campus monde</p></div>
         </div>
-        <!-- Card 3 -->
-        <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100 cursor-pointer">
+        <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100">
           <div class="relative h-44 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&auto=format&fit=crop&q=70" alt="Long séjour" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <img src="images/long-sejour.png" alt="Long séjour" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
           </div>
-          <div class="p-4">
-            <h3 class="font-semibold text-gray-900 text-sm">Long séjour</h3>
-            <p class="text-gray-500 text-xs mt-1">PVT · Tour du monde</p>
-          </div>
+          <div class="p-4"><h3 class="font-semibold text-gray-900 text-sm">Long séjour</h3><p class="text-gray-500 text-xs mt-1">PVT · Tour du monde</p></div>
         </div>
-        <!-- Card 4 -->
-        <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100 cursor-pointer">
+        <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100">
           <div class="relative h-44 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=400&auto=format&fit=crop&q=70" alt="Expatriation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <img src="images/expatriation.png" alt="Expatriation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
           </div>
-          <div class="p-4">
-            <h3 class="font-semibold text-gray-900 text-sm">Expatriation</h3>
-            <p class="text-gray-500 text-xs mt-1">Résidence à l'étranger</p>
-          </div>
+          <div class="p-4"><h3 class="font-semibold text-gray-900 text-sm">Expatriation</h3><p class="text-gray-500 text-xs mt-1">Résidence à l'étranger</p></div>
         </div>
-        <!-- Card 5 -->
-        <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100 cursor-pointer">
+        <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100">
           <div class="relative h-44 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&auto=format&fit=crop&q=70" alt="Digital nomads" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <img src="images/digital-nomads.png" alt="Digital nomads" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
           </div>
-          <div class="p-4">
-            <h3 class="font-semibold text-gray-900 text-sm">Digital nomads</h3>
-            <p class="text-gray-500 text-xs mt-1">Travail & voyage en continu</p>
-          </div>
+          <div class="p-4"><h3 class="font-semibold text-gray-900 text-sm">Digital nomads</h3><p class="text-gray-500 text-xs mt-1">Travail & voyage en continu</p></div>
         </div>
-        <!-- Card 6 -->
-        <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100 cursor-pointer">
+        <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100">
           <div class="relative h-44 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=400&auto=format&fit=crop&q=70" alt="Mission humanitaire" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <img src="images/mission-humanitaire.png" alt="Mission humanitaire" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
           </div>
-          <div class="p-4">
-            <h3 class="font-semibold text-gray-900 text-sm">Mission humanitaire</h3>
-            <p class="text-gray-500 text-xs mt-1">ONG · Bénévolat international</p>
-          </div>
+          <div class="p-4"><h3 class="font-semibold text-gray-900 text-sm">Mission humanitaire</h3><p class="text-gray-500 text-xs mt-1">ONG · Bénévolat international</p></div>
         </div>
-        <!-- Card 7 -->
-        <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100 cursor-pointer">
+        <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100">
           <div class="relative h-44 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&auto=format&fit=crop&q=70" alt="Voyage de groupe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <img src="images/voyage-groupe.png" alt="Voyage de groupe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
           </div>
-          <div class="p-4">
-            <h3 class="font-semibold text-gray-900 text-sm">Voyage de groupe</h3>
-            <p class="text-gray-500 text-xs mt-1">Famille · Amis · Associations</p>
-          </div>
+          <div class="p-4"><h3 class="font-semibold text-gray-900 text-sm">Voyage de groupe</h3><p class="text-gray-500 text-xs mt-1">Famille · Amis · Associations</p></div>
         </div>
-        <!-- CTA Card -->
-        <div class="card-hover bg-nomad-600 rounded-2xl overflow-hidden cursor-pointer flex flex-col items-center justify-center p-8 text-center min-h-[200px]">
+        <div class="card-hover bg-nomad-600 rounded-2xl flex flex-col items-center justify-center p-8 text-center min-h-[200px]">
           <p class="text-white font-semibold text-base mb-3">Mon profil correspond</p>
-          <a href="#devis" class="inline-flex items-center gap-2 bg-white text-nomad-700 text-sm font-semibold px-5 py-3 rounded-full hover:bg-nomad-50 transition-colors">
-            Obtenir mon devis
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <a href="#devis" class="inline-flex items-center gap-2 bg-white text-nomad-700 text-sm font-semibold px-5 py-3 rounded-full">Obtenir mon devis</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- POURQUOI NOMAD (3 cols) -->
-  <section class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <p class="text-nomad-600 text-sm font-semibold uppercase tracking-widest mb-3">Nos engagements</p>
-        <h2 class="text-4xl font-serif font-bold text-gray-900 mb-4">Pourquoi choisir Nomad ?</h2>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="text-center px-6">
-          <div class="w-14 h-14 bg-nomad-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f7059" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">Lisible & transparent</h3>
-          <p class="text-gray-500 leading-relaxed">Des garanties claires, sans jargon juridique. Vous savez exactement ce qui est couvert avant de partir.</p>
-        </div>
-        <div class="text-center px-6">
-          <div class="w-14 h-14 bg-nomad-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f7059" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">Conçu pour les voyageurs</h3>
-          <p class="text-gray-500 leading-relaxed">Du nomade digital à l'expatrié, nous couvrons tous les profils avec des options adaptées à chaque situation.</p>
-        </div>
-        <div class="text-center px-6">
-          <div class="w-14 h-14 bg-nomad-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f7059" stroke-width="2"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">Souscription en 30 secondes</h3>
-          <p class="text-gray-500 leading-relaxed">Un devis instantané, une attestation envoyée par mail. Partez l'esprit tranquille en quelques clics.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- GARANTIES APERÇU -->
-  <section class="py-24 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <p class="text-nomad-600 text-sm font-semibold uppercase tracking-widest mb-3">Couverture</p>
-        <h2 class="text-4xl font-serif font-bold text-gray-900 mb-4">Couvert là où ça compte</h2>
-        <p class="text-gray-500 text-lg max-w-xl mx-auto">Un socle complet, complété par des options à la carte selon votre voyage.</p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-        <!-- Santé -->
-        <div class="card-hover bg-white rounded-3xl p-8 border border-gray-100">
-          <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-6">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">Santé & Médical</h3>
-          <p class="text-gray-500 text-sm leading-relaxed mb-6">Frais médicaux, hospitalisation, rapatriement médical. Couverture jusqu'à 300 000 €.</p>
-          <ul class="space-y-2">
-            <li class="flex items-center gap-2 text-sm text-gray-600"><span class="text-nomad-500">✓</span> Frais médicaux & chirurgicaux</li>
-            <li class="flex items-center gap-2 text-sm text-gray-600"><span class="text-nomad-500">✓</span> Hospitalisation</li>
-            <li class="flex items-center gap-2 text-sm text-gray-600"><span class="text-nomad-500">✓</span> Rapatriement médical</li>
-            <li class="flex items-center gap-2 text-sm text-gray-600"><span class="text-nomad-500">✓</span> Médecine traditionnelle locale</li>
-          </ul>
-        </div>
-        <!-- Voyage -->
-        <div class="card-hover bg-white rounded-3xl p-8 border border-gray-100">
-          <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">Voyage & Annulation</h3>
-          <p class="text-gray-500 text-sm leading-relaxed mb-6">Vols ratés, bagages perdus, annulation. On couvre les aléas du transport.</p>
-          <ul class="space-y-2">
-            <li class="flex items-center gap-2 text-sm text-gray-600"><span class="text-nomad-500">✓</span> Annulation & interruption</li>
-            <li class="flex items-center gap-2 text-sm text-gray-600"><span class="text-nomad-500">✓</span> Retard de vol</li>
-            <li class="flex items-center gap-2 text-sm text-gray-600"><span class="text-nomad-500">✓</span> Perte ou vol de bagages</li>
-            <li class="flex items-center gap-2 text-sm text-gray-600"><span class="text-nomad-500">✓</span> Responsabilité civile</li>
-          </ul>
-        </div>
-        <!-- Affaires -->
-        <div class="card-hover bg-white rounded-3xl p-8 border border-gray-100">
-          <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mb-6">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">Affaires & Matériel</h3>
-          <p class="text-gray-500 text-sm leading-relaxed mb-6">Ordinateur, appareil photo, matériel pro. Option indispensable pour les nomads digitaux.</p>
-          <ul class="space-y-2">
-            <li class="flex items-center gap-2 text-sm text-gray-600"><span class="text-nomad-500">✓</span> Matériel informatique</li>
-            <li class="flex items-center gap-2 text-sm text-gray-600"><span class="text-nomad-500">✓</span> Appareil photo & optique</li>
-            <li class="flex items-center gap-2 text-sm text-gray-600"><span class="text-nomad-500">✓</span> Téléphone & tablette</li>
-            <li class="flex items-center gap-2 text-sm text-gray-500 opacity-60"><span>○</span> Option à la carte</li>
-          </ul>
-        </div>
-      </div>
-      <div class="text-center">
-        <a href="garanties.html" class="inline-flex items-center gap-2 border-2 border-nomad-600 text-nomad-700 font-semibold px-8 py-4 rounded-full hover:bg-nomad-50 transition-colors text-base">
-          Voir toutes les garanties
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- AVIS CLIENTS -->
-  <section class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <div class="flex items-center justify-center gap-3 mb-6">
-          <div class="flex items-center gap-1">
-            <span class="text-green-600 font-bold text-xl">Trustpilot</span>
-          </div>
-          <div class="flex gap-1">
-            <span class="text-green-500 text-xl">★★★★★</span>
-          </div>
-          <span class="text-gray-500 text-sm font-medium">4.8/5 · 1 240 avis</span>
-        </div>
-        <h2 class="text-4xl font-serif font-bold text-gray-900 mb-4">Ce que disent nos voyageurs</h2>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-gray-50 rounded-2xl p-7">
-          <div class="flex gap-1 mb-4"><span class="text-amber-400">★★★★★</span></div>
-          <p class="text-gray-700 text-sm leading-relaxed mb-6">"Hospitalisée au Mexique, Nomad a tout géré en quelques heures. L'assistance a répondu à 3h du matin. Vraiment irréprochable."</p>
-          <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-full bg-nomad-200 flex items-center justify-center text-nomad-700 text-sm font-semibold">SC</div>
-            <div>
-              <p class="text-sm font-semibold text-gray-900">Sarah C.</p>
-              <p class="text-xs text-gray-400">Voyage au Mexique · 3 semaines</p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-gray-50 rounded-2xl p-7">
-          <div class="flex gap-1 mb-4"><span class="text-amber-400">★★★★★</span></div>
-          <p class="text-gray-700 text-sm leading-relaxed mb-6">"Nomad digital depuis 2 ans, c'est la première assurance qui correspond vraiment à mon mode de vie. L'option matériel vaut vraiment le coup."</p>
-          <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 text-sm font-semibold">TM</div>
-            <div>
-              <p class="text-sm font-semibold text-gray-900">Thomas M.</p>
-              <p class="text-xs text-gray-400">Digital nomad · Asie du Sud-Est</p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-gray-50 rounded-2xl p-7">
-          <div class="flex gap-1 mb-4"><span class="text-amber-400">★★★★☆</span></div>
-          <p class="text-gray-700 text-sm leading-relaxed mb-6">"Devis obtenu en 2 minutes, attestation dans la foulée. Parfait pour un départ en urgence. L'interface est vraiment bien pensée."</p>
-          <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-full bg-rose-100 flex items-center justify-center text-rose-700 text-sm font-semibold">AL</div>
-            <div>
-              <p class="text-sm font-semibold text-gray-900">Amélie L.</p>
-              <p class="text-xs text-gray-400">Erasmus Prague · 6 mois</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="py-24 bg-gray-50">
-    <div class="max-w-3xl mx-auto px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <p class="text-nomad-600 text-sm font-semibold uppercase tracking-widest mb-3">Questions fréquentes</p>
-        <h2 class="text-4xl font-serif font-bold text-gray-900">Tout ce que vous voulez savoir</h2>
-      </div>
-      <div class="space-y-2" id="faq">
-        <!-- FAQ items -->
-        <div class="accordion-item open bg-white rounded-2xl overflow-hidden border border-gray-100">
-          <button class="w-full flex items-center justify-between p-6 text-left" onclick="toggleAccordion(this)">
-            <span class="font-semibold text-gray-900 pr-4">Quand ma couverture commence-t-elle ?</span>
-            <span class="accordion-icon text-nomad-600 text-2xl font-light flex-shrink-0">+</span>
-          </button>
-          <div class="accordion-content px-6 pb-6">
-            <p class="text-gray-500 leading-relaxed">Votre couverture commence dès la date de départ que vous avez indiquée dans votre devis. L'attestation d'assurance vous est envoyée par email immédiatement après souscription.</p>
-          </div>
-        </div>
-        <div class="accordion-item bg-white rounded-2xl overflow-hidden border border-gray-100">
-          <button class="w-full flex items-center justify-between p-6 text-left" onclick="toggleAccordion(this)">
-            <span class="font-semibold text-gray-900 pr-4">Puis-je modifier ma couverture en cours de voyage ?</span>
-            <span class="accordion-icon text-nomad-600 text-2xl font-light flex-shrink-0">+</span>
-          </button>
-          <div class="accordion-content px-6 pb-6">
-            <p class="text-gray-500 leading-relaxed">Oui, vous pouvez prolonger votre contrat depuis votre espace client. La modification des options en cours de contrat sera disponible dans une prochaine version.</p>
-          </div>
-        </div>
-        <div class="accordion-item bg-white rounded-2xl overflow-hidden border border-gray-100">
-          <button class="w-full flex items-center justify-between p-6 text-left" onclick="toggleAccordion(this)">
-            <span class="font-semibold text-gray-900 pr-4">Comment déclarer un sinistre à l'étranger ?</span>
-            <span class="accordion-icon text-nomad-600 text-2xl font-light flex-shrink-0">+</span>
-          </button>
-          <div class="accordion-content px-6 pb-6">
-            <p class="text-gray-500 leading-relaxed">Notre assistance est joignable 24h/24 par téléphone, WhatsApp ou email. En cas d'urgence médicale, appelez directement le numéro d'urgence indiqué sur votre attestation.</p>
-          </div>
-        </div>
-        <div class="accordion-item bg-white rounded-2xl overflow-hidden border border-gray-100">
-          <button class="w-full flex items-center justify-between p-6 text-left" onclick="toggleAccordion(this)">
-            <span class="font-semibold text-gray-900 pr-4">L'assurance couvre-t-elle les sports extrêmes ?</span>
-            <span class="accordion-icon text-nomad-600 text-2xl font-light flex-shrink-0">+</span>
-          </button>
-          <div class="accordion-content px-6 pb-6">
-            <p class="text-gray-500 leading-relaxed">Les sports à risques sont disponibles en option. Ski, surf, plongée, escalade — sélectionnez l'option Sport lors de votre devis.</p>
-          </div>
-        </div>
-        <div class="accordion-item bg-white rounded-2xl overflow-hidden border border-gray-100">
-          <button class="w-full flex items-center justify-between p-6 text-left" onclick="toggleAccordion(this)">
-            <span class="font-semibold text-gray-900 pr-4">Y a-t-il une durée maximale de couverture ?</span>
-            <span class="accordion-icon text-nomad-600 text-2xl font-light flex-shrink-0">+</span>
-          </button>
-          <div class="accordion-content px-6 pb-6">
-            <p class="text-gray-500 leading-relaxed">Nos contrats couvrent des séjours de 1 jour à 24 mois. Pour les expatriations de longue durée, contactez-nous pour une solution personnalisée.</p>
-          </div>
-        </div>
-        <div class="accordion-item bg-white rounded-2xl overflow-hidden border border-gray-100">
-          <button class="w-full flex items-center justify-between p-6 text-left" onclick="toggleAccordion(this)">
-            <span class="font-semibold text-gray-900 pr-4">Quelles sont les exclusions principales ?</span>
-            <span class="accordion-icon text-nomad-600 text-2xl font-light flex-shrink-0">+</span>
-          </button>
-          <div class="accordion-content px-6 pb-6">
-            <p class="text-gray-500 leading-relaxed">Comme toute assurance, certains événements sont exclus : maladies préexistantes non déclarées, actes intentionnels, zones de guerre déconseillées par le Quai d'Orsay. La liste complète est dans vos CGU.</p>
-          </div>
-        </div>
-        <div class="accordion-item bg-white rounded-2xl overflow-hidden border border-gray-100">
-          <button class="w-full flex items-center justify-between p-6 text-left" onclick="toggleAccordion(this)">
-            <span class="font-semibold text-gray-900 pr-4">Comment fonctionne le remboursement ?</span>
-            <span class="accordion-icon text-nomad-600 text-2xl font-light flex-shrink-0">+</span>
-          </button>
-          <div class="accordion-content px-6 pb-6">
-            <p class="text-gray-500 leading-relaxed">Après déclaration et fourniture des justificatifs, le remboursement intervient sous 10 jours ouvrés. Pour les frais médicaux urgents, nous pouvons intervenir en tiers payant directement avec l'établissement.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA FINAL -->
   <section class="relative py-32 overflow-hidden">
     <div class="absolute inset-0">
-      <img src="https://images.unsplash.com/photo-1682687221080-5cb261c645cb?w=1800&auto=format&fit=crop&q=80" alt="Voyage" class="w-full h-full object-cover" />
+      <img src="images/hero2-voyage.png" alt="Voyage" class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-nomad-900/75"></div>
     </div>
     <div class="relative max-w-3xl mx-auto px-6 lg:px-8 text-center">
-      <p class="text-nomad-300 text-sm font-semibold uppercase tracking-widest mb-6">Prêt à partir ?</p>
-      <h2 class="font-serif text-4xl lg:text-5xl font-bold text-white mb-6">Votre prochaine aventure<br />mérite une vraie protection.</h2>
-      <p class="text-white/70 text-lg mb-10 max-w-xl mx-auto">Devis personnalisé en 30 secondes. Attestation immédiate. Annulation gratuite sous 14 jours.</p>
-      <a href="#devis" class="inline-flex items-center gap-2 bg-nomad-500 text-white font-semibold px-10 py-5 rounded-full hover:bg-nomad-400 transition-colors text-lg mb-8">
-        Obtenir mon devis gratuit
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <div class="flex flex-wrap justify-center gap-4">
-        <span class="inline-flex items-center gap-2 text-white/70 text-sm">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          Devis en 30 sec
-        </span>
-        <span class="text-white/30">·</span>
-        <span class="inline-flex items-center gap-2 text-white/70 text-sm">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/></svg>
-          Attestation immédiate
-        </span>
-        <span class="text-white/30">·</span>
-        <span class="inline-flex items-center gap-2 text-white/70 text-sm">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-          Assistance mondiale 24/7
-        </span>
-      </div>
+      <h2 class="font-serif text-4xl lg:text-5xl font-bold text-white mb-6">Votre prochaine aventure mérite une vraie protection.</h2>
+      <a href="#devis" class="inline-flex items-center gap-2 bg-nomad-500 text-white font-semibold px-10 py-5 rounded-full hover:bg-nomad-400 transition-colors text-lg">Obtenir mon devis gratuit</a>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="bg-gray-900 text-white py-16">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-12">
-        <div>
-          <div class="flex items-center gap-2 mb-3">
-            <div class="w-8 h-8 bg-nomad-500 rounded-full flex items-center justify-center">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1L14 5V11L8 15L2 11V5L8 1Z" fill="white"/></svg>
-            </div>
-            <span class="text-xl font-semibold">nomad</span>
-          </div>
-          <p class="text-gray-400 text-sm max-w-xs">L'assurance voyage conçue pour les vrais voyageurs.</p>
+      <div class="flex items-center gap-2 mb-4">
+        <div class="w-8 h-8 bg-nomad-500 rounded-full flex items-center justify-center">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1L14 5V11L8 15L2 11V5L8 1Z" fill="white"/></svg>
         </div>
-        <div class="flex flex-wrap gap-6">
-          <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Documents d'assurance</a>
-          <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Politique de confidentialité</a>
-          <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Mentions légales</a>
-          <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">CGU & CGV</a>
-        </div>
+        <span class="text-xl font-semibold">nomad</span>
       </div>
-      <div class="flex flex-col md:flex-row items-center justify-between gap-4 border-t border-gray-800 pt-8">
-        <p class="text-gray-500 text-sm">© 2026 Nomad. Tous droits réservés.</p>
-        <div class="flex items-center gap-4">
-          <a href="#" class="text-gray-500 hover:text-white transition-colors">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <a href="#" class="text-gray-500 hover:text-white transition-colors">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="#" class="text-gray-500 hover:text-white transition-colors">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-        </div>
-      </div>
+      <p class="text-gray-500 text-sm">© 2026 Nomad. Tous droits réservés.</p>
     </div>
   </footer>
-
-  <script>
-    function toggleAccordion(btn) {
-      const item = btn.closest('.accordion-item');
-      item.classList.toggle('open');
-    }
-  </script>
+  <script>function toggleAccordion(btn){btn.closest('.accordion-item').classList.toggle('open');}</script>
 </body>
 </html>
